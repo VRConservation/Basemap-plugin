@@ -5,5 +5,5 @@ version=1.0
 qgisMinimumVersion=3.0
 author=Vance Russell
 email=vance@3point.xyz
-repository=URL to the code repository
+repository=https://github.com/VRConservation/Basemap-plugin
 icon=logo.png
