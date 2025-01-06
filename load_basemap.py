@@ -48,7 +48,7 @@ class BasemapLoaderPlugin:
             self.iface.messageBar().pushCritical('Error', 'Invalid Basemap Layer')
 
     # Load Landfire EVT layer
-        landfire_url = 'https://lfps.usgs.gov/arcgis/rest/services/Landfire_LF230/US_230EVT/ImageServer'
+        landfire_url = 'https://lfps.usgs.gov/arcgis/rest/services/Landfire_LF240/US_240EVT/ImageServer'
         landfire_uri = f'url={landfire_url}'
         landfire_rlayer = QgsRasterLayer(
             landfire_uri, 'Landfire EVT', 'arcgismapserver')
