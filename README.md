@@ -1,19 +1,14 @@
-# QGIS Minimalist Plugin Skeleton
+# Basemap Landfire EVT Plugin
+Loads the Landfire EVT and a OpenStreetMap basemap. Also want to add the following functions:
 
-In various QGIS plugin tutorials you are told to use _Plugin Builder_ tool to create a skeleton for your plugin.
-It is surely helpful as it helps you kickstart your plugin with stuff like UI designer file, auto tests, docs, i18n, scripts and so on.
+1. Loads a shp file as an AOI
+2. Clips the AOI to Landfire EVT
+3. Generates a conservation target map with % of each EVT class to the AOI
+4. Add global human mod database and imperiled spp. richness, e.g., t&e species tif from Wildfire Task Force RRKs
 
-This QGIS plugin is the complete opposite of a plugin built with _Plugin Builder_: it is a plugin skeleton cut down
-to the bare minimum that still results in a valid QGIS plugin. It consists of two files only: a text file with metadata and a Python file with a bit of code.
 
-## Why?
 
-For educational purposes, it is useful to understand how a very basic plugin could look like.
-
-For practical reasons, it is sometimes useful to create a single purpose plugin with the least amount of extra bells and whistles,
-so the code that actually does something is not hidden among generated boilerplate code.
-
-## How to use it?
+## How to use the plugin with QGIS
 
 1. Create a new python plugin directory
   * e.g. Linux ```~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/minimal```
@@ -26,3 +21,5 @@ Now you should see a "Go!" button in your "Plugins" toolbar (make sure it is ena
 
 The next step is to change the metadata (e.g. plugin title and description) in ```metadata.txt``` and
 start adding your own code to ```__init__.py```. Have fun!
+
+Based on the QGIS minimalist plugin skeleton.
